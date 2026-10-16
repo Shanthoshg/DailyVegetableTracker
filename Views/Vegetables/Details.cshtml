@@ -1,0 +1,47 @@
+
+@model DailyVegetableTracker.Models.Vegetable
+
+@{
+    ViewData["Title"] = "Vegetable Details";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-dark">
+                    <h4 class="mb-0">Vegetable Details</h4>
+                </div>
+
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Vegetable ID</dt>
+                        <dd class="col-sm-8">@Model.Id</dd>
+
+                        <dt class="col-sm-4">Name</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4">Category</dt>
+                        <dd class="col-sm-8">@(Model.Category ?? "-")</dd>
+
+                        <dt class="col-sm-4">Default Unit</dt>
+                        <dd class="col-sm-8">@Model.Unit</dd>
+                    </dl>
+
+                    <div class="d-flex gap-2">
+                        <a asp-action="Edit"
+                           asp-route-id="@Model.Id"
+                           class="btn btn-primary">
+                            Edit Vegetable
+                        </a>
+
+                        <a asp-action="Index"
+                           class="btn btn-secondary">
+                            Back to List
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

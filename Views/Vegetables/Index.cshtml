@@ -1,0 +1,82 @@
+
+@model IEnumerable<DailyVegetableTracker.Models.Vegetable>
+
+@{
+    ViewData["Title"] = "Vegetables";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Vegetable Management</h2>
+        <a asp-action="Create" class="btn btn-success">
+            + Add Vegetable
+        </a>
+    </div>
+    
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    @if (Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Vegetable Name</th>
+                        <th>Category</th>
+                        <th>Unit</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vegetable in Model)
+                    {
+                        <tr>
+                            <td>@vegetable.Id</td>
+                            <td>@vegetable.Name</td>
+                            <td>@(vegetable.Category ?? "-")</td>
+                            <td>@vegetable.Unit</td>
+                  <td>
+    <a asp-action="Details"
+       asp-route-id="@vegetable.Id"
+       class="btn btn-info btn-sm">
+        Details
+    </a>
+
+    <a asp-action="Edit"
+       asp-route-id="@vegetable.Id"
+       class="btn btn-primary btn-sm">
+        Edit
+    </a>
+
+    <a asp-action="Delete"
+       asp-route-id="@vegetable.Id"
+       class="btn btn-danger btn-sm">
+        Delete
+    </a>
+</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            No vegetables added yet. Click "Add Vegetable" to get started.
+        </div>
+    }
+</div>

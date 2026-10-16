@@ -282,6 +282,7 @@ The live application's availability and features depend on the current deploymen
 
 ## 📄 License
 
+
 No license has been specified here. Unless a license is added to the repository, the project should not be assumed to be open-source licensed for unrestricted reuse.
 
 ---

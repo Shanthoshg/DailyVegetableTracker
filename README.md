@@ -1,4 +1,3 @@
-
 # 🥬 DailyVegetableTracker
 
 **Track your daily vegetable purchases and manage your household spending with ease.**
@@ -17,19 +16,20 @@ DailyVegetableTracker is a web application built with ASP.NET Core MVC and MySQL
 
 The dashboard provides an overview of daily spending, monthly expenses, vegetables tracked, average purchase amount, recent purchases, and spending by vegetable.
 
-![DailyVegetableTracker Dashboard](Screenshot%202026-10-16%20210741.png)
+![DailyVegetableTracker Dashboard](screenshots/dashboard.png)
 
 ### 2. My Vegetables
 
 The vegetable section displays available vegetables, their categories, measurement units, and links to view their details.
 
-![DailyVegetableTracker My Vegetables](Screenshot%202026-10-16%20210804.png)
+![DailyVegetableTracker My Vegetables](screenshots/vegetables.png)
 
 ---
 
 ## ✨ Features
 
 ### 📊 Dashboard
+
 - View today's total spending.
 - Monitor current month's spending.
 - See the number of vegetables tracked.
@@ -38,6 +38,7 @@ The vegetable section displays available vegetables, their categories, measureme
 - Compare monthly spending by vegetable.
 
 ### 🥦 Vegetable Management
+
 - View the list of available vegetables.
 - Store vegetable names and categories.
 - Specify measurement units such as kg, bunch, dozen, and piece.
@@ -45,37 +46,39 @@ The vegetable section displays available vegetables, their categories, measureme
 - Extend the application with vegetable creation, editing, and deletion workflows.
 
 ### 🛒 Purchase Tracking
+
 - Record vegetable purchases.
 - Enter quantity, price, and purchase date.
 - Calculate purchase totals.
 - Store purchase records in the MySQL database.
 
 ### 📅 Purchase History
+
 - Review previous purchases.
 - View purchase dates, vegetables, quantities, and totals.
 - Track daily and monthly spending.
 - Support future filtering and search improvements.
 
-*Note: Features are subject to the functionality currently implemented in the application.*
+_Note: Features are subject to the functionality currently implemented in the application._
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| C# | Backend programming language |
-| ASP.NET Core MVC | Web application framework |
-| Entity Framework Core | Database access and ORM |
-| MySQL | Relational database |
-| Razor Views | Dynamic server-rendered pages |
-| HTML5 | Web page structure |
-| CSS3 | Styling |
-| Bootstrap | Responsive UI components |
-| JavaScript | Client-side interactions |
-| MySQL Workbench | Database management |
-| Git and GitHub | Version control and source code hosting |
-| MonsterASP.NET | Application hosting |
+| Technology            | Purpose                                 |
+| --------------------- | --------------------------------------- |
+| C#                    | Backend programming language            |
+| ASP.NET Core MVC      | Web application framework               |
+| Entity Framework Core | Database access and ORM                 |
+| MySQL                 | Relational database                     |
+| Razor Views           | Dynamic server-rendered pages           |
+| HTML5                 | Web page structure                      |
+| CSS3                  | Styling                                 |
+| Bootstrap             | Responsive UI components                |
+| JavaScript            | Client-side interactions                |
+| MySQL Workbench       | Database management                     |
+| Git and GitHub        | Version control and source code hosting |
+| MonsterASP.NET        | Application hosting                     |
 
 ---
 
@@ -114,7 +117,7 @@ DailyVegetableTracker/
 └── DailyVegetableTracker.csproj
 ```
 
-*This is a high-level overview. Individual files and folders may vary in your current project.*
+_This is a high-level overview. Individual files and folders may vary in your current project._
 
 ---
 
